@@ -4,9 +4,17 @@
 	background:  #222;
 	align:  center;
 	font-family: comfortaa;
+	align-content: center;
+	justify-content: center;
 }
 
 h1 {
 	text-align:  center;
 	color:  white;
+}
+
+.rickroll {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
