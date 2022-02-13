@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Source+Code+Pro&display=swap');
+
+/* vars */
+:root {
+	--main: #111;
+	--accent1: #222;
+	--accent2: #ADD8E6;
+  	--typewriterSpeed: 2s;
+  	--typewriterCharacters: 7;
+}
+
+* {
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--main);
+	color: white;
+	font-family: 'Alata', sans-serif;
+	display: grid;
+}
+
+
+/* navigator */
+.nav {
+	background: var(--accent1);
+	overflow: hidden;
+	padding-left: 1%;
+	padding-right: 2%;
+	position: fixed;
+	width: 97%;
+	top: 0;
+	z-index: 100;
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+	float: right;
+  	text-align: center;
+  	padding: 14px 20px;
+ 	font-size: 17px;
+ 	
+}
+
+.nav h1 {
+	display: inline;
+	color: var(--accent2);
+	text-shadow: 3px 3px var(--main);
+}
+
+.nav a:hover {
+	transition: color 0.3s ease 0s;
+	color: var(--accent2);
+}
+
+/* parallax */
+.header {
+	margin-top: 5vh;
+	background-image: url("assets/kamer.jpg");
+	min-height: 95vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-content: center;
+}
+
+/* header */
+.header .text {
+	text-align: center;
+	top: 38vh;
+	position: sticky;
+	padding-bottom: 10vh;
+}
+
+.header .text h1 {
+	font-size: 60px;
+	text-shadow: 3px 3px var(--accent1);
+}
+
+.header .text h2 {
+	text-shadow: 2px 2px var(--accent1);
+}
+
+
+/* page */
+.page {
+	padding: 70px;
+}
+
+footer {
+	position: fixed;
+	top: 96vh;
+
+}
+
+.button {
+	text-decoration: none;
+	color: white;
+	background-color: var(--accent2);
+	border: 1px solid var(--accent2);
+	font-size: 30px;
+	padding: 10px;
+}
+
+.button:hover {
+	transition: background-color 10s ease 0s;
+	background-color: white;
+	transition: color 0.3s ease 0s;
+	color: var(--accent2);
+	border-color: white;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+	.nav a {
+		font-size: 12px;
+	}
+	.header .text h1 {
+		font-size: 40px;
+	}
+}
+
+/* signin & agenda input */
+.btn-class {
+	text-decoration: none;
+	border-style: solid;
+	margin-top: 1vh;
+	color: white;
+	background: var(--accent1);
+	border-color: var(--accent1);
+	font-size: 20px;
+}
+
+.form-control {
+	background-color: var(--accent1);
+	border-style: solid;
+	border-color: var(--accent1);
+	color: white;
+	padding-right: 10px;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.logintext {
+	font-size: 20px;
+}
+
+.return {
+	color: white;
+}
+
+/* typewriter */
+
+.typewriter h1 {
+	position: relative;
+  	font-family: 'Source Code Pro', monospace;
+  	position: relative;
+  	width: max-content;
+}
+
+.typewriter h1::before,
+.typewriter h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typewriter h1::before {
+  background: var(--main);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 3s forwards;
+}
+
+.typewriter h1::after {
+  width: 0.125em;
+  background: white;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 3s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
