@@ -1,15 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
-body {
+* {
+	margin: 0;
+}
+
+html {
 	background:  #222;
 	color: white;
 	font-family: rubik;
+	margin-top: 1vh;
+	margin-right: 1vw;
+	margin-bottom: 1vh; 
+	margin-left: 1vw;
 }
+
+h1 {
+	font-size: 4vw;
+}
+
+p {
+	font-size: 1.4vw;
+}
+
+p a {
+	color: white;
+	text-decoration: underline;
+}
+
+p a:hover {
+	color: #f9812a;
+	transition: color ease-in-out 0.2s;
+}
+
+/* nav */
+
+nav a {
+	text-decoration: none;
+	color: white;
+	float: right;
+	margin-left: 1vw;
+	font-size: 20px;
+}
+
+nav a:hover {
+	color: #f9812a;
+	transition: color ease-in-out 0.2s;
+}
+
+nav li {
+	list-style-type: none;
+}
+
 
 /* text cycler */
 
 .cycle-sentence {
-	margin: 5px;
 	text-align: left;
 }
 
@@ -21,6 +66,10 @@ body {
 	-webkit-animation: rotateWord 6s linear infinite 0s;
 	-ms-animation: rotateWord 6s linear infinite 0s;
 	animation: rotateWord 6s linear infinite 0s;	
+}
+
+.cycle-words {
+	margin-bottom: 2vh;
 }
 
 /* https://graf1x.com/shades-of-orange-color-palette/ */
