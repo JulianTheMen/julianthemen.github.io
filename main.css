@@ -62,7 +62,6 @@ nav li {
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
-	color: #6b969d;
 	-webkit-animation: rotateWord 6s linear infinite 0s;
 	-ms-animation: rotateWord 6s linear infinite 0s;
 	animation: rotateWord 6s linear infinite 0s;	
@@ -122,3 +121,19 @@ nav li {
     100% { opacity: 0; }
 }
 
+/* footer */
+
+footer {
+	position: fixed;
+	top: 97vh;
+}
+
+footer a {
+	color: white;
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: #f9812a;
+	transition: color ease-in-out 0.2s;
+}
