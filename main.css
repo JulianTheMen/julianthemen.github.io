@@ -132,6 +132,7 @@ nav li {
 footer {
 	position: fixed;
 	top: 97vh;
+	margin-left: 0.5vw;
 }
 
 footer a {
