@@ -24,12 +24,15 @@ p {
 
 p a {
 	color: white;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 p a:hover {
-	color: #f9812a;
-	transition: color ease-in-out 0.2s;
+	color: orange;
+	background: -webkit-linear-gradient(-45deg, rgba(147,33,145,1) 0%, rgba(163,50,124,1) 25%, rgba(199,89,75,1) 50%, rgba(225,115,39,1) 75%, rgba(255,147,0,1) 100%);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	transition: 0.2s;
 }
 
 /* nav */
@@ -48,9 +51,25 @@ nav a {
 	font-size: 20px;
 }
 
-nav a:hover {
-	color: #f9812a;
-	transition: color ease-in-out 0.2s;
+nav li a:nth-child(3):hover {
+	background: -webkit-linear-gradient(-45deg, rgba(147,33,145,1) 0%, rgba(173,61,111,1) 50%, rgba(199,89,75,1) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	transition: 0.2s;
+}
+
+nav li a:nth-child(2):hover {
+	background: -webkit-linear-gradient(-45deg, rgba(173,61,111,1) 0%, rgba(199,89,75,1) 50%, rgba(225,115,39,1) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	transition: 0.2s;
+}
+
+nav li a:nth-child(1):hover {
+	background: -webkit-linear-gradient(-45deg, rgba(199,89,75,1) 0%, rgba(225,115,39,1) 50%, rgba(255,147,0,1) 100%); 
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	transition: 0.2s;
 }
 
 nav li {
@@ -68,8 +87,8 @@ nav li {
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
-	-webkit-animation: rotateWord 6s linear infinite 0s;
-	-ms-animation: rotateWord 6s linear infinite 0s;
+	-webkit-animation: rotateWord 12s linear infinite 0s;
+	-ms-animation: rotateWord 12s linear infinite 0s;
 	animation: rotateWord 6s linear infinite 0s;	
 }
 
@@ -77,26 +96,32 @@ nav li {
 	margin-bottom: 2vh;
 }
 
-/* https://graf1x.com/shades-of-orange-color-palette/ */
+/* https://www.schemecolor.com/purple-to-orange.php */
 
 .cycle-words span:nth-child(1) {
     -webkit-animation-delay: 0s; 
 	-ms-animation-delay: 0s; 
 	animation-delay: 0s;
-	color: #f9a602;
+	background: -webkit-linear-gradient(-45deg, rgba(147,33,145,1) 0%, rgba(173,61,111,1) 50%, rgba(199,89,75,1) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 .cycle-words span:nth-child(2) { 
     -webkit-animation-delay: 2s; 
 	-ms-animation-delay: 2s; 
 	animation-delay: 2s;
-	color: #f9812a;
+	background: -webkit-linear-gradient(-45deg, rgba(173,61,111,1) 0%, rgba(199,89,75,1) 50%, rgba(225,115,39,1) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 .cycle-words span:nth-child(3) { 
     -webkit-animation-delay: 4s; 
 	-ms-animation-delay: 4s; 
 	animation-delay: 4s; 
-	color: #fd6a02;
+	background: -webkit-linear-gradient(-45deg, rgba(199,89,75,1) 0%, rgba(225,115,39,1) 50%, rgba(255,147,0,1) 100%); 
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 @-webkit-keyframes rotateWord {
@@ -137,12 +162,15 @@ footer {
 
 footer a {
 	color: white;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 footer a:hover {
-	color: #f9812a;
-	transition: color ease-in-out 0.2s;
+	color: orange;
+	background: -webkit-linear-gradient(-45deg, rgba(147,33,145,1) 0%, rgba(163,50,124,1) 25%, rgba(199,89,75,1) 50%, rgba(225,115,39,1) 75%, rgba(255,147,0,1) 100%);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	transition: 0.2s;
 }
 
 /* mobile */
