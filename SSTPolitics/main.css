@@ -59,7 +59,7 @@ body {
 /* parallax */
 .header {
 	margin-top: 5vh;
-	background-image: url("/kamer.jpg");
+	background-image: url("kamer.jpg");
 	min-height: 95vh;
 	background-attachment: fixed;
 	background-position: center;
