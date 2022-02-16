@@ -101,9 +101,9 @@ nav li {
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
-	-webkit-animation: rotateWord math(var(--cycles) * 2) linear infinite 0s;
-	-ms-animation: rotateWord math(var(--cycles) * 2) linear infinite 0s;
-	animation: rotateWord math(var(--cycles) * 2) linear infinite 0s;	
+	-webkit-animation: rotateWord calc(var(--cycles) * 2) linear infinite 0s;
+	-ms-animation: rotateWord calc(var(--cycles) * 2) linear infinite 0s;
+	animation: rotateWord calc(var(--cycles) * 2) linear infinite 0s;	
 }
 
 .cycle-words {
