@@ -17,6 +17,7 @@
 	font-family: rubik;
 	color: var(--textcolor);
 	background: var(--background);
+	overflow: hidden;
 }
 
 .page {
