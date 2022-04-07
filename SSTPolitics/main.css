@@ -160,7 +160,7 @@ footer a {
 }
 
 footer a:hover {
-	color: var(--accent2);
+	color: #86a8b3;
   	transition: 0.2s;
 }
 
