@@ -239,6 +239,14 @@ footer a:hover {
 	max-width: 45vw;
 }
 
+.flex-row .col img {
+	width: 25vw;
+}
+
+.flex-row2 .col img {
+	width: 37.5vw;
+}
+
 /* text cycler */
 
 .cycle-sentence {
