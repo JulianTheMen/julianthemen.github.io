@@ -268,8 +268,9 @@ footer a:hover {
 
 .col .imgtext {
 	position: absolute;
-	top: 13vh;
+	top: 90px;
 	left: 55px;
+	right: 55px;
 	z-index: 0;
 }
 
